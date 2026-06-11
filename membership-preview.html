@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - Cabramatta Business Association</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cbaRed: '#C8102E',
+                        cbaDark: '#0f0f23',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .inner-hero-bg {
+            background: linear-gradient(135deg, rgba(200, 16, 46, 0.9), rgba(15, 15, 35, 0.95)), url('https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .btn-primary { 
+            background: linear-gradient(135deg, #C8102E 0%, #a30d25 100%); 
+            color: white; 
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover { 
+            transform: translateY(-3px); 
+            box-shadow: 0 8px 25px rgba(200, 16, 46, 0.5);
+        }
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Header (Inner Page Style) -->
+    <header class="fixed w-full bg-white shadow-sm z-50 py-3 border-b border-gray-100">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="homepage-preview.html" class="flex items-center gap-2 cursor-pointer">
+                <img src="images/logo.png" alt="Cabramatta Business Association Logo" class="h-14 w-auto drop-shadow-md" style="object-fit: contain;">
+            </a>
+            <nav class="hidden md:flex gap-8 font-semibold text-gray-600 text-sm tracking-wide">
+                <a href="homepage-preview.html" class="hover:text-cbaRed transition-colors">HOME</a>
+                <a href="about-us-preview.html" class="hover:text-cbaRed transition-colors">ABOUT US</a>
+                <a href="membership-preview.html" class="text-cbaRed transition-colors border-b-2 border-cbaRed pb-1">MEMBERSHIP</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <div class="flex gap-2 font-bold text-sm">
+                    <a href="#" class="text-cbaRed border-b-2 border-cbaRed pb-1">EN</a>
+                    <a href="../vi/membership-preview.html" class="text-gray-400 hover:text-gray-600 transition-colors">VI</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Inner Hero -->
+    <section class="inner-hero-bg pt-40 pb-24 px-4 text-center text-white relative overflow-hidden">
+        <div class="container mx-auto max-w-4xl relative z-10">
+            <div class="inline-block px-4 py-1 rounded-full bg-white/10 border border-white/20 text-white font-bold tracking-widest text-sm mb-6 uppercase">
+                Join the Network
+            </div>
+            <h1 class="font-heading text-5xl md:text-6xl font-extrabold mb-6">Become a Member</h1>
+            <p class="text-xl text-gray-200 font-light max-w-2xl mx-auto leading-relaxed">Join a powerful collective of businesses, residents, and cultural leaders dedicated to the economic and cultural prosperity of Cabramatta.</p>
+        </div>
+    </section>
+
+    <!-- Membership Tiers -->
+    <section class="py-24 px-6 bg-white -mt-10 relative z-20">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto">
+                <!-- Tier 1 -->
+                <div class="bg-gray-50 rounded-3xl p-8 border border-gray-200 shadow-md text-center card-hover">
+                    <h3 class="font-heading text-2xl font-bold text-gray-800 mb-2">Associate Member</h3>
+                    <p class="text-gray-500 text-sm mb-6">For residents & supporters</p>
+                    <div class="text-4xl font-extrabold text-gray-900 mb-8">Free</div>
+                    <ul class="text-left space-y-4 mb-8 text-gray-600 font-medium">
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> Open to residents</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> Attend meetings</li>
+                        <li class="flex items-center gap-3 text-gray-400 line-through"><svg class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg> No voting rights</li>
+                    </ul>
+                    <a href="#application-form" class="block w-full py-4 border-2 border-cbaRed text-cbaRed rounded-xl font-bold hover:bg-cbaRed hover:text-white transition-colors">Apply Now</a>
+                </div>
+
+                <!-- Tier 2 (Highlighted) -->
+                <div class="bg-cbaRed rounded-3xl p-10 shadow-2xl text-center transform md:-translate-y-6 relative overflow-hidden border border-red-600">
+                    <div class="absolute top-0 right-0 bg-yellow-400 text-yellow-900 text-xs font-bold px-4 py-1.5 rounded-bl-xl shadow-sm">RECOMMENDED</div>
+                    <h3 class="font-heading text-3xl font-bold text-white mb-2">Full Member</h3>
+                    <p class="text-red-200 text-sm mb-6">For businesses in Cabramatta</p>
+                    <div class="text-2xl font-extrabold text-white mb-8 tracking-wide bg-black/20 py-2 rounded-lg border border-white/10">VOTING RIGHTS</div>
+                    <ul class="text-left space-y-4 mb-8 text-white/95 font-medium">
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> <strong>Full voting rights at AGM</strong></li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> Eligible for committee</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> Marketing & promo support</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> Business training access</li>
+                    </ul>
+                    <a href="#application-form" class="block w-full py-4 bg-white text-cbaRed rounded-xl font-bold hover:bg-gray-100 transition-colors shadow-lg">Apply as Business</a>
+                </div>
+
+                <!-- Tier 3 -->
+                <div class="bg-gray-50 rounded-3xl p-8 border border-gray-200 shadow-md text-center card-hover">
+                    <h3 class="font-heading text-2xl font-bold text-gray-800 mb-2">Affiliate Member</h3>
+                    <p class="text-gray-500 text-sm mb-6">For organisations & Gov</p>
+                    <div class="text-2xl font-extrabold text-gray-900 mb-8 bg-white py-2 rounded-lg border border-gray-200">Partnerships</div>
+                    <ul class="text-left space-y-4 mb-8 text-gray-600 font-medium">
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-cbaRed" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> Educational institutions</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-cbaRed" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> Government bodies</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-cbaRed" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg> Advance shared purposes</li>
+                    </ul>
+                    <a href="#application-form" class="block w-full py-4 border-2 border-gray-800 text-gray-800 rounded-xl font-bold hover:bg-gray-800 hover:text-white transition-colors">Partner With Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Eligibility -->
+    <section class="py-20 bg-gray-50 px-6 border-t border-gray-200">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="font-heading text-3xl font-bold mb-8 text-center">Eligibility Criteria</h2>
+            <div class="bg-white p-10 rounded-3xl shadow-sm border border-gray-100">
+                <p class="text-gray-600 leading-relaxed mb-6">As per <strong>Clause 8.4</strong> of our Constitution, membership is open to individuals and entities that align with our purposes.</p>
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-red-50 text-cbaRed rounded-xl flex items-center justify-center font-bold text-xl flex-shrink-0">1</div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">Full Membership</h4>
+                            <p class="text-gray-600 text-sm">Must be an incorporated body, a registered company, or a sole trader actively conducting business within Cabramatta. Full members have the right to vote and hold executive office.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-red-50 text-cbaRed rounded-xl flex items-center justify-center font-bold text-xl flex-shrink-0">2</div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">Associate Membership</h4>
+                            <p class="text-gray-600 text-sm">Open to individuals, residents, and members of the general public who support the purposes of the Association. Associate members cannot vote but can attend general meetings.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="w-12 h-12 bg-red-50 text-cbaRed rounded-xl flex items-center justify-center font-bold text-xl flex-shrink-0">3</div>
+                        <div>
+                            <h4 class="font-bold text-lg mb-2">Affiliate Membership</h4>
+                            <p class="text-gray-600 text-sm">Open to other organisations, educational institutions, or government bodies who wish to partner with us. Cannot vote, but formalises a strategic relationship.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form -->
+    <section id="application-form" class="py-24 px-6 bg-white border-t border-gray-200">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-4xl font-bold mb-4">Membership Application Form</h2>
+                <div class="w-16 h-1 bg-cbaRed mx-auto mb-6"></div>
+                <p class="text-gray-500">Please fill out the form below. Our committee will review your application at the next scheduled meeting.</p>
+            </div>
+            
+            <div class="bg-white border border-gray-200 p-8 md:p-12 rounded-3xl shadow-xl">
+                <form class="space-y-8">
+                    <!-- Membership Type -->
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-4">I am applying for: *</label>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <label class="border border-gray-200 p-4 rounded-xl cursor-pointer hover:border-cbaRed hover:bg-red-50 transition-colors flex items-center gap-3">
+                                <input type="radio" name="membership_type" value="full" class="w-4 h-4 text-cbaRed focus:ring-cbaRed">
+                                <span class="font-bold text-gray-800">Full Member</span>
+                            </label>
+                            <label class="border border-gray-200 p-4 rounded-xl cursor-pointer hover:border-cbaRed hover:bg-red-50 transition-colors flex items-center gap-3">
+                                <input type="radio" name="membership_type" value="associate" class="w-4 h-4 text-cbaRed focus:ring-cbaRed">
+                                <span class="font-bold text-gray-800">Associate Member</span>
+                            </label>
+                            <label class="border border-gray-200 p-4 rounded-xl cursor-pointer hover:border-cbaRed hover:bg-red-50 transition-colors flex items-center gap-3">
+                                <input type="radio" name="membership_type" value="affiliate" class="w-4 h-4 text-cbaRed focus:ring-cbaRed">
+                                <span class="font-bold text-gray-800">Affiliate Member</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">First Name *</label>
+                            <input type="text" class="w-full border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:border-cbaRed focus:ring-1 focus:ring-cbaRed bg-gray-50">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Last Name *</label>
+                            <input type="text" class="w-full border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:border-cbaRed focus:ring-1 focus:ring-cbaRed bg-gray-50">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Email Address *</label>
+                            <input type="email" class="w-full border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:border-cbaRed focus:ring-1 focus:ring-cbaRed bg-gray-50">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Phone Number *</label>
+                            <input type="tel" class="w-full border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:border-cbaRed focus:ring-1 focus:ring-cbaRed bg-gray-50">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Business / Organisation Name (If applicable)</label>
+                        <input type="text" class="w-full border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:border-cbaRed focus:ring-1 focus:ring-cbaRed bg-gray-50">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-bold text-gray-700 mb-2">Why do you want to join the Association?</label>
+                        <textarea rows="4" class="w-full border border-gray-300 px-4 py-3 rounded-lg focus:outline-none focus:border-cbaRed focus:ring-1 focus:ring-cbaRed bg-gray-50 resize-none"></textarea>
+                    </div>
+
+                    <div class="flex items-start gap-3">
+                        <input type="checkbox" id="agree" class="mt-1 w-5 h-5 text-cbaRed border-gray-300 rounded focus:ring-cbaRed">
+                        <label for="agree" class="text-sm text-gray-600">I agree to be bound by the rules of the Association (Code of Conduct and Constitution) if admitted as a member.</label>
+                    </div>
+
+                    <button type="button" class="btn-primary w-full py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl">
+                        Submit Application
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-500 py-8 text-center text-sm border-t border-gray-800">
+        <p>&copy; 2026 Cabramatta Business Association. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+

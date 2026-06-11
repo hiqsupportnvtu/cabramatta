@@ -1,0 +1,101 @@
+<!-- Flatsome UX Builder About Us Page Shortcode -->
+<!-- PLEASE COPY EVERYTHING BELOW AND PASTE INTO THE WORDPRESS TEXT EDITOR, THEN SWITCH TO UX BUILDER -->
+
+<!-- Inner Hero -->
+[section bg_color="rgb(15, 15, 35)" bg_overlay="rgba(0, 0, 0, 0.7)" padding="120px 0px" dark="true" bg="1" bg_size="large" bg_pos="center"]
+[row]
+[col span="8" span__sm="12" span__md="10" align="center" margin="0px auto" animate="fadeInUp"]
+[ux_text font_size="3.5rem" font_size__sm="2.5rem" line_height="1.1"]
+<h1 style="font-weight: 800; margin-bottom: 20px;">About the Association</h1>
+[/ux_text]
+[ux_text font_size="1.2rem" line_height="1.6"]
+<p>Discover our history, our purpose, and the dedicated team working to elevate Cabramatta's multicultural business landscape.</p>
+[/ux_text]
+[/col]
+[/row]
+[/section]
+
+<!-- Detailed History & Mission -->
+[section padding="80px 0px" bg_color="rgb(255, 255, 255)"]
+[row v_align="middle"]
+[col span="6" span__sm="12" padding="0px 30px 0px 0px"]
+[title text="Our Story" style="bold" size="xlarge"]
+[ux_text]
+<p>The Cabramatta Business Association is an incorporated Not-for-Profit body created to represent the vibrant and diverse business community of Cabramatta. Founded on the principles of unity and cultural preservation, we strive to make Cabramatta an internationally recognised destination.</p>
+<p>Our motto, <strong>"Stronger Together"</strong>, reflects our belief that by weaving traditional cultural heritage with modern enterprise, we can overcome challenges and create lasting economic resilience.</p>
+[/ux_text]
+[/col]
+[col span="6" span__sm="12" padding="40px 40px 40px 40px" bg_color="rgb(249, 249, 249)" bg_radius="10" depth="1"]
+[title text="Our Core Objectives" style="bold" size="large"]
+[ux_text]
+<ul style="list-style-type: none; padding-left: 0;">
+<li style="margin-bottom: 15px; display: flex; align-items: center;"><i class="icon-checkmark" style="color: rgb(200, 16, 46); margin-right: 10px;"></i> Advocate for small multicultural businesses</li>
+<li style="margin-bottom: 15px; display: flex; align-items: center;"><i class="icon-checkmark" style="color: rgb(200, 16, 46); margin-right: 10px;"></i> Secure Special Entertainment Precinct status</li>
+<li style="margin-bottom: 15px; display: flex; align-items: center;"><i class="icon-checkmark" style="color: rgb(200, 16, 46); margin-right: 10px;"></i> Promote Cabramatta as a tourism & food destination</li>
+<li style="display: flex; align-items: center;"><i class="icon-checkmark" style="color: rgb(200, 16, 46); margin-right: 10px;"></i> Deliver business development and training</li>
+</ul>
+[/ux_text]
+[/col]
+[/row]
+[/section]
+
+<!-- Leadership Team -->
+[section padding="80px 0px" bg_color="rgb(249, 249, 249)"]
+[row]
+[col span="12" align="center"]
+[title text="Management Committee" style="center" size="xxlarge"]
+[ux_text font_size="1.1rem"]
+<p>The strategic body responsible for the governance and daily operations of the Association.</p>
+[/ux_text]
+[/col]
+[/row]
+[row style="large"]
+[col span="3" span__md="6" span__sm="12" align="center"]
+[team_member style="shade" name="Khang Nguyen Phan" title="CHAIRPERSON" image_height="100%" image_width="80" image_radius="100" image_hover="zoom"]
+<p style="font-size: 0.9rem;">Leads the strategic vision and acts as the official spokesperson for the Association.</p>
+[/team_member]
+[/col]
+[col span="3" span__md="6" span__sm="12" align="center"]
+[team_member style="shade" name="Vuong Tran" title="DEPUTY CHAIR" image_height="100%" image_width="80" image_radius="100" image_hover="zoom"]
+<p style="font-size: 0.9rem;">Supports the Chairperson and serves as the nominated Public Officer.</p>
+[/team_member]
+[/col]
+[col span="3" span__md="6" span__sm="12" align="center"]
+[team_member style="shade" name="Van Viet LE" title="SECRETARY" image_height="100%" image_width="80" image_radius="100" image_hover="zoom"]
+<p style="font-size: 0.9rem;">Manages correspondence, records, and the official member register.</p>
+[/team_member]
+[/col]
+[col span="3" span__md="6" span__sm="12" align="center"]
+[team_member style="shade" name="Ton Kim Tien BANH" title="TREASURER" image_height="100%" image_width="80" image_radius="100" image_hover="zoom"]
+<p style="font-size: 0.9rem;">Oversees the financial health and regulatory reporting of the Association.</p>
+[/team_member]
+[/col]
+[/row]
+[/section]
+
+<!-- Cultural Advisory Council -->
+[section padding="80px 0px" bg_color="rgb(15, 15, 35)" dark="true"]
+[row v_align="middle"]
+[col span="5" span__sm="12"]
+[ux_image id="2" image_size="large" depth="3" bg_radius="10"]
+[/col]
+[col span="7" span__sm="12" padding="0px 0px 0px 40px"]
+[title text="Cultural Advisory Council (CAC)" style="bold" color="rgb(200, 16, 46)"]
+[ux_text]
+<p style="font-style: italic;">"Ensuring our decisions are deeply rooted in the community's heritage."</p>
+<p>As per our Constitution, the CAC is an esteemed body comprising community elders, arts practitioners, youth representatives, and business leaders. Their role is to provide non-binding, strategic advice to the Management Committee regarding cultural affairs, diversity, and community harmony.</p>
+[/ux_text]
+[row_inner]
+[col_inner span="6" span__sm="12" padding="20px 20px 20px 20px" border="1px 1px 1px 1px" border_color="rgba(255, 255, 255, 0.2)" border_radius="10" align="center"]
+<h4 style="margin: 0; font-size: 2rem; color: #fff;">6-12</h4>
+<p style="margin: 0; font-size: 0.8rem; text-transform: uppercase;">Appointed Members</p>
+[/col_inner]
+[col_inner span="6" span__sm="12" padding="20px 20px 20px 20px" border="1px 1px 1px 1px" border_color="rgba(255, 255, 255, 0.2)" border_radius="10" align="center"]
+<h4 style="margin: 0; font-size: 2rem; color: #fff;">Quarterly</h4>
+<p style="margin: 0; font-size: 0.8rem; text-transform: uppercase;">Official Meetings</p>
+[/col_inner]
+[/row_inner]
+[/col]
+[/row]
+[/section]
+

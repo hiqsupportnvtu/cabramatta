@@ -1,0 +1,276 @@
+<!-- Flatsome UX Builder Homepage Shortcode for Cabramatta Business Association (PREMIUM VERSION) -->
+<!-- PLEASE COPY EVERYTHING BELOW AND PASTE INTO THE WORDPRESS TEXT EDITOR, THEN SWITCH TO UX BUILDER -->
+
+<!-- 1. HERO BANNER: Vision & Mission -->
+[section bg_color="rgb(15, 15, 35)" bg_overlay="rgba(0, 0, 0, 0.6)" padding="150px 0px" dark="true" class="hero-section" bg="1" bg_size="large" parallax="3"]
+[row]
+[col span="10" span__sm="12" span__md="12" align="center" margin="0px auto" animate="fadeInUp"]
+[ux_text font_size="1.5rem" text_color="rgb(200, 16, 46)" line_height="1.5"]
+<strong>WEAVING TRADITIONAL CULTURAL HERITAGE WITH MODERN ENTERPRISE</strong>
+[/ux_text]
+[ux_text font_size="3.5rem" font_size__sm="2.5rem" line_height="1.1"]
+<h1 style="font-weight: 700; margin-bottom: 20px;">Cabramatta Business Association</h1>
+[/ux_text]
+[ux_text font_size="1.2rem" line_height="1.6"]
+<p>Transforming Cabramatta into a vibrant, internationally recognised hub of multicultural commerce, food diversity, and community celebration.</p>
+[/ux_text]
+[gap height="30px"]
+[button text="Become a Member" color="primary" size="large" radius="99" icon="icon-angle-right" link="#membership"]
+[button text="Explore Events" style="outline" color="white" size="large" radius="99" link="#events"]
+[/col]
+[/row]
+[/section]
+
+<!-- 2. OUR PURPOSE: Strategic Objectives -->
+[section padding="100px 0px" bg_color="rgb(255, 255, 255)" class="purpose-section"]
+[row]
+[col span="12" align="center"]
+[title text="Our Purpose & Aims" style="center" size="xxlarge"]
+[ux_text font_size="1.1rem"]
+<p>Championing, promoting, and advocating for small multicultural businesses.</p>
+[/ux_text]
+[/col]
+[/row]
+[row style="large" v_align="equal"]
+[col span="4" span__sm="12" padding="30px 30px 30px 30px" bg_color="rgb(249, 249, 249)" bg_radius="10" depth="1" depth_hover="3" animate="fadeInUp"]
+[ux_text text_align="center" text_color="rgb(200, 16, 46)"]
+<i class="icon-heart" style="font-size: 3rem; margin-bottom: 20px; display: inline-block;"></i>
+[/ux_text]
+[ux_text text_align="center"]
+<h3 style="font-weight: 600;">Stand Behind Our Members</h3>
+<p>Giving our community a collective voice. We help members grow professionally through networking, skills development, mentoring, and access to programs.</p>
+[/ux_text]
+[/col]
+[col span="4" span__sm="12" padding="30px 30px 30px 30px" bg_color="rgb(249, 249, 249)" bg_radius="10" depth="1" depth_hover="3" animate="fadeInUp" animate_delay="150"]
+[ux_text text_align="center" text_color="rgb(200, 16, 46)"]
+<i class="icon-star-o" style="font-size: 3rem; margin-bottom: 20px; display: inline-block;"></i>
+[/ux_text]
+[ux_text text_align="center"]
+<h3 style="font-weight: 600;">Special Entertainment Precinct</h3>
+<p>Actively advocating for an expanded night-time and entertainment economy that reflects the energy, culture, and life of our vibrant community.</p>
+[/ux_text]
+[/col]
+[col span="4" span__sm="12" padding="30px 30px 30px 30px" bg_color="rgb(249, 249, 249)" bg_radius="10" depth="1" depth_hover="3" animate="fadeInUp" animate_delay="300"]
+[ux_text text_align="center" text_color="rgb(200, 16, 46)"]
+<i class="icon-map-pin-fill" style="font-size: 3rem; margin-bottom: 20px; display: inline-block;"></i>
+[/ux_text]
+[ux_text text_align="center"]
+<h3 style="font-weight: 600;">A Must-Visit Destination</h3>
+<p>Running campaigns that put Cabramatta on the map. We back strategic projects that advance cultural expression, economic resilience, and social inclusion.</p>
+[/ux_text]
+[/col]
+[/row]
+[/section]
+
+<!-- 3. CULTURAL ADVISORY COUNCIL -->
+[section bg_color="rgb(15, 15, 35)" padding="100px 0px" dark="true" class="cac-section"]
+[row v_align="middle"]
+[col span="6" span__sm="12" padding="0px 40px 0px 0px" animate="fadeInLeft"]
+[title text="The Cultural Advisory Council" style="bold-center" color="rgb(200, 16, 46)"]
+[ux_text font_size="1.1rem"]
+<p><strong>Wisdom comes in many forms.</strong> We have established a Cultural Advisory Council (CAC) — a group of respected community voices guiding the cultural dimensions of our work.</p>
+<ul style="list-style-type: none; padding-left: 0;">
+<li style="margin-bottom: 10px;">✓ Bringing deep cultural knowledge and lived experience.</li>
+<li style="margin-bottom: 10px;">✓ Ensuring our decisions are genuinely connected to the community.</li>
+<li style="margin-bottom: 10px;">✓ Outspoken champions of diversity and inclusion.</li>
+</ul>
+<p>The table reflects the full richness of our community: elders, cultural practitioners, religious leaders, artists, and advocates.</p>
+[/ux_text]
+[/col]
+[col span="6" span__sm="12" animate="fadeInRight"]
+[ux_image id="2" image_size="large" depth="3" depth_hover="5" bg_radius="10"]
+[/col]
+[/row]
+[/section]
+
+<!-- 4. MEMBERSHIP TIERS -->
+[section padding="100px 0px" bg_color="rgb(249, 249, 249)" class="membership-section" id="membership"]
+[row]
+[col span="12" align="center"]
+[title text="Join the Association" style="center" size="xxlarge"]
+[ux_text font_size="1.1rem"]
+<p>We offer three types of membership, because we know our community is made up of many different people with different roles.</p>
+[/ux_text]
+[/col]
+[/row]
+[row style="collapse" v_align="equal"]
+[col span="4" span__sm="12"]
+[ux_price_table title="Associate Member" price="Free / Small Fee" description="For residents & supporters" bg_color="rgb(255, 255, 255)" depth="1" depth_hover="3" class="membership-card"]
+[bullet_item text="Open to residents & community"]
+[bullet_item text="Attend meetings & events"]
+[bullet_item text="No voting rights"]
+[bullet_item text="No executive eligibility"]
+[button text="Apply Now" style="outline" color="primary" size="large" expand="true" link="/join/associate"]
+[/ux_price_table]
+[/col]
+[col span="4" span__sm="12"]
+[ux_price_table title="Full Member" price="VOTING RIGHTS" description="For businesses in Cabramatta" bg_color="rgb(200, 16, 46)" color="light" featured="true" depth="3" depth_hover="5" class="membership-card"]
+[bullet_item text="Full voting rights at General Meetings"]
+[bullet_item text="Eligible for committee election"]
+[bullet_item text="Marketing & promotional support"]
+[bullet_item text="Business networking & training"]
+[button text="Apply as Business" color="white" style="outline" size="large" expand="true" link="/join/full"]
+[/ux_price_table]
+[/col]
+[col span="4" span__sm="12"]
+[ux_price_table title="Affiliate Member" price="Partnerships" description="For organisations & Gov bodies" bg_color="rgb(255, 255, 255)" depth="1" depth_hover="3" class="membership-card"]
+[bullet_item text="Educational institutions"]
+[bullet_item text="Government bodies"]
+[bullet_item text="Advance shared purposes"]
+[bullet_item text="Formal partnerships"]
+[button text="Partner With Us" style="outline" color="primary" size="large" expand="true" link="/join/affiliate"]
+[/ux_price_table]
+[/col]
+[/row]
+[/section]
+
+<!-- 5. THE HEART OF CABRAMATTA (EVENTS) -->
+[section padding="100px 0px" bg_color="rgb(255, 255, 255)" class="events-section" id="events"]
+[row]
+[col span="12" align="center"]
+[title text="Community Events" style="center" size="xxlarge"]
+[ux_text font_size="1.1rem"]
+<p>Building campaigns that strengthen the business and cultural life of Cabramatta.</p>
+[/ux_text]
+[/col]
+[/row]
+[row]
+[col span="12"]
+[tabgroup style="tabs" align="center" nav_size="large"]
+[tab title="Upcoming Events"]
+[blog_posts style="shade" type="slider" columns="3" columns__md="2" columns__sm="1" animate="fadeInUp" show_date="true" excerpt_length="15" comments="false" image_height="70%" image_hover="zoom" text_align="left"]
+[/tab]
+[tab title="Ongoing Initiatives"]
+[ux_text]
+<p style="text-align:center; padding: 40px;">Information about our ongoing strategic projects and advocacy will be displayed here.</p>
+[/ux_text]
+[/tab]
+[tab title="Past Highlights"]
+[ux_gallery ids="1,2,3,4,5,6" style="normal" type="masonry" width="full-width" col_spacing="small" columns="4" columns__sm="2" image_hover="zoom" image_size="medium"]
+[/tab]
+[/tabgroup]
+[/col]
+[/row]
+[/section]
+
+<!-- 5.5 LATEST NEWS -->
+[section padding="100px 0px" bg_color="rgb(249, 249, 249)" class="news-section"]
+[row]
+[col span="12" align="center"]
+[title text="Latest News & Updates" style="center" size="xxlarge"]
+[ux_text font_size="1.1rem"]
+<p>Stay informed with our latest announcements, meeting minutes, and initiatives.</p>
+[/ux_text]
+[/col]
+[/row]
+[row]
+[col span="12"]
+[blog_posts style="bounce" type="row" columns="2" columns__md="1" show_date="true" excerpt_length="20" comments="false" image_height="50%" text_align="left"]
+[/col]
+[/row]
+[/section]
+
+<!-- 6. THE COMMITTEE -->
+[section padding="100px 0px" bg_color="rgb(249, 249, 249)" class="committee-section"]
+[row]
+[col span="12" align="center"]
+[title text="The Management Committee" style="center" size="xxlarge"]
+[ux_text font_size="1.1rem"]
+<p>Elected by members to lead the Association with honesty, integrity, and genuine respect.</p>
+[/ux_text]
+[/col]
+[/row]
+[row style="small" v_align="equal"]
+[col span="3" span__md="6" span__sm="12" animate="fadeInUp"]
+[team_member style="shade" name="Khang Nguyen Phan" title="Chairperson" image_height="100%" image_radius="10" image_hover="zoom"]
+[/team_member]
+[/col]
+[col span="3" span__md="6" span__sm="12" animate="fadeInUp" animate_delay="100"]
+[team_member style="shade" name="Vuong Tran" title="Deputy Chair & Public Officer" image_height="100%" image_radius="10" image_hover="zoom"]
+[/team_member]
+[/col]
+[col span="3" span__md="6" span__sm="12" animate="fadeInUp" animate_delay="200"]
+[team_member style="shade" name="Van Viet LE" title="Secretary" image_height="100%" image_radius="10" image_hover="zoom"]
+[/team_member]
+[/col]
+[col span="3" span__md="6" span__sm="12" animate="fadeInUp" animate_delay="300"]
+[team_member style="shade" name="Ton Kim Tien BANH" title="Treasurer" image_height="100%" image_radius="10" image_hover="zoom"]
+[/team_member]
+[/col]
+[/row]
+[/section]
+
+<!-- 7. GOVERNANCE & TRANSPARENCY -->
+[section padding="80px 0px" bg_color="rgb(255, 255, 255)" class="governance-section"]
+[row]
+[col span="5" span__sm="12"]
+[title text="Governance & Transparency" style="bold"]
+[ux_text]
+<p>We are a registered Not-for-Profit incorporated under the Associations Incorporation Act 2009 (NSW). Every dollar we earn is used to advance our purposes.</p>
+<p>We maintain clear records and make our financial statements and Constitution available to our members.</p>
+[/ux_text]
+[button text="Download Constitution" color="secondary" style="outline" icon="icon-angle-down" link="/documents/"]
+[/col]
+[col span="7" span__sm="12"]
+[accordion]
+[accordion-item title="How are decisions made?"]
+[ux_text]
+<p>The committee makes day-to-day decisions. Significant changes to our rules require a special resolution (75% agreement) by members at a general meeting with 14 days' notice.</p>
+[/ux_text]
+[/accordion-item]
+[accordion-item title="How are funds managed?"]
+[ux_text]
+<p>We can raise money through fees, donations, grants, and cultural partnerships. The Treasurer oversees day-to-day finances, and if annual revenue exceeds $500,000, we undertake independent audits.</p>
+[/ux_text]
+[/accordion-item]
+[accordion-item title="What is the Code of Conduct?"]
+[ux_text]
+<p>Everyone is expected to act with honesty, integrity, and respect for the cultures that make our community who we are. Conflicts of interest must be disclosed.</p>
+[/ux_text]
+[/accordion-item]
+[/accordion]
+[/col]
+[/row]
+[/section]
+
+<!-- 7.5 OUR PARTNERS -->
+[section padding="60px 0px" bg_color="rgb(255, 255, 255)" class="partners-section"]
+[row]
+[col span="12" align="center"]
+[title text="Our Partners & Sponsors" style="center" size="large"]
+[/col]
+[/row]
+[row]
+[col span="12"]
+[ux_slider style="normal" freescroll="true" margin="30px" arrows="false" bullets="false" auto_slide="3000"]
+[logo img="10" height="60px" hover="color"]
+[logo img="11" height="60px" hover="color"]
+[logo img="12" height="60px" hover="color"]
+[logo img="13" height="60px" hover="color"]
+[logo img="14" height="60px" hover="color"]
+[/ux_slider]
+[/col]
+[/row]
+[/section]
+
+<!-- 8. CONTACT CTA -->
+[section padding="100px 0px" bg_color="rgb(200, 16, 46)" dark="true" class="cta-section"]
+[row v_align="middle"]
+[col span="6" span__sm="12"]
+[title text="Contact the Association" style="bold"]
+[ux_text]
+<p>Whether you're a local business wanting to join, or a partner seeking collaboration, we'd love to hear from you.</p>
+<p><strong>Official Address:</strong> 23/8 Dutton Lane, Cabramatta, NSW 2166<br/>
+<strong>Email:</strong> admin@cba.org.au<br/>
+<strong>Website:</strong> cba.org.au</p>
+[/ux_text]
+[/col]
+[col span="6" span__sm="12" padding="40px 40px 40px 40px" bg_color="rgb(255, 255, 255)" bg_radius="10" depth="2"]
+[ux_text text_color="dark"]
+<h4 style="margin-bottom: 20px;">Send a Message</h4>
+[/ux_text]
+[contact-form-7 id="123" title="Contact form"]
+[/col]
+[/row]
+[/section]
+

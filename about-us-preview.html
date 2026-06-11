@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Cabramatta Business Association</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cbaRed: '#C8102E',
+                        cbaDark: '#0f0f23',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .inner-hero-bg {
+            background: linear-gradient(rgba(15, 15, 35, 0.8), rgba(15, 15, 35, 0.8)), url('images/hero.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .btn-primary { 
+            background: linear-gradient(135deg, #C8102E 0%, #a30d25 100%); 
+            color: white; 
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover { 
+            transform: translateY(-3px); 
+            box-shadow: 0 8px 25px rgba(200, 16, 46, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Header (Inner Page Style) -->
+    <header class="fixed w-full bg-white shadow-sm z-50 py-3 border-b border-gray-100">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="homepage-preview.html" class="flex items-center gap-2 cursor-pointer">
+                <img src="images/logo.png" alt="Cabramatta Business Association Logo" class="h-14 w-auto drop-shadow-md" style="object-fit: contain;">
+            </a>
+            <nav class="hidden md:flex gap-8 font-semibold text-gray-600 text-sm tracking-wide">
+                <a href="homepage-preview.html" class="hover:text-cbaRed transition-colors">HOME</a>
+                <a href="about-us-preview.html" class="text-cbaRed transition-colors border-b-2 border-cbaRed pb-1">ABOUT US</a>
+                <a href="membership-preview.html" class="hover:text-cbaRed transition-colors">MEMBERSHIP</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <div class="flex gap-2 font-bold text-sm">
+                    <a href="#" class="text-cbaRed border-b-2 border-cbaRed pb-1">EN</a>
+                    <a href="../vi/about-us-preview.html" class="text-gray-400 hover:text-gray-600 transition-colors">VI</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Inner Hero -->
+    <section class="inner-hero-bg pt-40 pb-20 px-4 text-center text-white">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="font-heading text-5xl md:text-6xl font-extrabold mb-6">About the Association</h1>
+            <p class="text-xl text-gray-300 font-light max-w-2xl mx-auto leading-relaxed">Discover our history, our purpose, and the dedicated team working to elevate Cabramatta's multicultural business landscape.</p>
+        </div>
+    </section>
+
+    <!-- Detailed History & Mission -->
+    <section class="py-20 px-6 bg-white">
+        <div class="container mx-auto max-w-5xl">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="md:w-1/2">
+                    <h2 class="font-heading text-4xl font-bold mb-6 text-gray-900">Our Story</h2>
+                    <div class="w-16 h-1 bg-cbaRed mb-6"></div>
+                    <p class="text-gray-600 leading-relaxed mb-6">The Cabramatta Business Association is an incorporated Not-for-Profit body created to represent the vibrant and diverse business community of Cabramatta. Founded on the principles of unity and cultural preservation, we strive to make Cabramatta an internationally recognised destination.</p>
+                    <p class="text-gray-600 leading-relaxed">Our motto, <strong>"Stronger Together"</strong>, reflects our belief that by weaving traditional cultural heritage with modern enterprise, we can overcome challenges and create lasting economic resilience.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-10 rounded-2xl border border-gray-100 shadow-sm relative">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-red-50 rounded-bl-full -z-0"></div>
+                        <h3 class="font-heading text-2xl font-bold mb-4 relative z-10">Our Core Objectives</h3>
+                        <ul class="space-y-4 text-gray-600 relative z-10">
+                            <li class="flex gap-3"><svg class="w-6 h-6 text-cbaRed flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Advocate for small multicultural businesses</li>
+                            <li class="flex gap-3"><svg class="w-6 h-6 text-cbaRed flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Secure Special Entertainment Precinct status</li>
+                            <li class="flex gap-3"><svg class="w-6 h-6 text-cbaRed flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Promote Cabramatta as a tourism & food destination</li>
+                            <li class="flex gap-3"><svg class="w-6 h-6 text-cbaRed flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Deliver business development and training</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="py-20 bg-gray-50 px-6 border-t border-gray-200">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-4xl font-bold mb-4">Management Committee</h2>
+                <div class="w-16 h-1 bg-cbaRed mx-auto mb-6"></div>
+                <p class="text-gray-500 max-w-2xl mx-auto">The strategic body responsible for the governance and daily operations of the Association.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Member 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm text-center border border-gray-100 hover:-translate-y-2 transition-transform duration-300">
+                    <img src="images/avatar_khang.png" class="w-32 h-32 mx-auto rounded-full object-cover mb-4 border-4 border-gray-50">
+                    <h3 class="font-heading font-bold text-xl">Khang Nguyen Phan</h3>
+                    <p class="text-cbaRed text-sm font-bold tracking-wider mb-3">CHAIRPERSON</p>
+                    <p class="text-gray-500 text-sm">Leads the strategic vision and acts as the official spokesperson for the Association.</p>
+                </div>
+                <!-- Member 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm text-center border border-gray-100 hover:-translate-y-2 transition-transform duration-300">
+                    <img src="images/avatar_vuong.png" class="w-32 h-32 mx-auto rounded-full object-cover mb-4 border-4 border-gray-50">
+                    <h3 class="font-heading font-bold text-xl">Vuong Tran</h3>
+                    <p class="text-cbaRed text-sm font-bold tracking-wider mb-3">DEPUTY CHAIR</p>
+                    <p class="text-gray-500 text-sm">Supports the Chairperson and serves as the nominated Public Officer.</p>
+                </div>
+                <!-- Member 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm text-center border border-gray-100 hover:-translate-y-2 transition-transform duration-300">
+                    <img src="images/avatar_van.png" class="w-32 h-32 mx-auto rounded-full object-cover mb-4 border-4 border-gray-50">
+                    <h3 class="font-heading font-bold text-xl">Van Viet LE</h3>
+                    <p class="text-cbaRed text-sm font-bold tracking-wider mb-3">SECRETARY</p>
+                    <p class="text-gray-500 text-sm">Manages correspondence, records, and the official member register.</p>
+                </div>
+                <!-- Member 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm text-center border border-gray-100 hover:-translate-y-2 transition-transform duration-300">
+                    <img src="images/avatar_tien.png" class="w-32 h-32 mx-auto rounded-full object-cover mb-4 border-4 border-gray-50">
+                    <h3 class="font-heading font-bold text-xl">Ton Kim Tien BANH</h3>
+                    <p class="text-cbaRed text-sm font-bold tracking-wider mb-3">TREASURER</p>
+                    <p class="text-gray-500 text-sm">Oversees the financial health and regulatory reporting of the Association.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Advisory Council -->
+    <section class="py-20 px-6 bg-cbaDark text-white relative overflow-hidden">
+        <div class="container mx-auto max-w-5xl relative z-10">
+            <div class="flex flex-col md:flex-row gap-12 items-center">
+                <div class="md:w-5/12">
+                    <img src="images/council.png" class="rounded-2xl border border-gray-700 shadow-2xl">
+                </div>
+                <div class="md:w-7/12">
+                    <h2 class="font-heading text-4xl font-bold mb-4 text-cbaRed">Cultural Advisory Council (CAC)</h2>
+                    <p class="text-gray-300 mb-6 italic">"Ensuring our decisions are deeply rooted in the community's heritage."</p>
+                    <p class="text-gray-400 leading-relaxed mb-6">As per our Constitution, the CAC is an esteemed body comprising community elders, arts practitioners, youth representatives, and business leaders. Their role is to provide non-binding, strategic advice to the Management Committee regarding cultural affairs, diversity, and community harmony.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-800/50 p-4 rounded-xl border border-gray-700 text-center">
+                            <h4 class="text-2xl font-bold text-white mb-1">6-12</h4>
+                            <p class="text-xs text-gray-400 uppercase tracking-wide">Appointed Members</p>
+                        </div>
+                        <div class="bg-gray-800/50 p-4 rounded-xl border border-gray-700 text-center">
+                            <h4 class="text-2xl font-bold text-white mb-1">Quarterly</h4>
+                            <p class="text-xs text-gray-400 uppercase tracking-wide">Official Meetings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-500 py-8 text-center text-sm">
+        <p>&copy; 2026 Cabramatta Business Association. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+

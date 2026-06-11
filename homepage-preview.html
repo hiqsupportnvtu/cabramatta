@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabramatta Business Association - Premium Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cbaRed: '#C8102E',
+                        cbaDark: '#0f0f23',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(rgba(15, 15, 35, 0.75), rgba(15, 15, 35, 0.75)), url('images/banner.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #C8102E 0%, #a30d25 100%);
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(200, 16, 46, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(200, 16, 46, 0.5);
+        }
+
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Accordion transition */
+        .accordion-content {
+            transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+
+        .accordion-content.open {
+            max-height: 500px;
+            opacity: 1;
+        }
+
+        .accordion-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .accordion-icon.open {
+            transform: rotate(180deg);
+        }
+
+        /* Tabs transition */
+        .tab-content {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Header -->
+    <header
+        class="fixed w-full bg-white/95 backdrop-blur-md shadow-sm z-50 py-3 transition-all border-b border-gray-100">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-2 cursor-pointer">
+                <img src="images/logo.png" alt="Cabramatta Business Association Logo" class="h-16 w-auto drop-shadow-md"
+                    style="object-fit: contain;">
+            </div>
+            <nav class="hidden md:flex gap-8 font-semibold text-gray-600 text-sm tracking-wide">
+                <a href="homepage-preview.html"
+                    class="text-cbaRed transition-colors border-b-2 border-cbaRed pb-1">HOME</a>
+                <a href="about-us-preview.html" class="hover:text-cbaRed transition-colors">ABOUT US</a>
+                <a href="membership-preview.html" class="hover:text-cbaRed transition-colors">MEMBERSHIP</a>
+                <a href="homepage-preview.html#events" class="hover:text-cbaRed transition-colors">EVENTS</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <div class="flex gap-2 font-bold text-sm">
+                    <a href="#" class="text-cbaRed border-b-2 border-cbaRed pb-1">EN</a>
+                    <a href="../vi/homepage-preview.html"
+                        class="text-gray-400 hover:text-gray-600 transition-colors">VI</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. Hero Banner -->
+    <section class="hero-bg min-h-screen flex items-center text-white pt-20 px-4">
+        <div class="container mx-auto text-center max-w-5xl">
+            <div
+                class="inline-block px-4 py-1 rounded-full bg-cbaRed/20 border border-cbaRed/50 text-cbaRed font-bold tracking-widest text-sm mb-6 uppercase">
+                Weaving Traditional Cultural Heritage with Modern Enterprise
+            </div>
+            <h1 class="font-heading text-5xl md:text-7xl font-extrabold mb-8 leading-tight">
+                Cabramatta Business Association
+            </h1>
+            <p class="text-xl md:text-2xl mb-12 text-gray-300 font-light max-w-3xl mx-auto leading-relaxed">
+                Transforming Cabramatta into a vibrant, internationally recognised hub of multicultural commerce, food
+                diversity, and community celebration.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="membership-preview.html"
+                    class="btn-primary px-10 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-2">
+                    Become a Member
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+                <a href="#events"
+                    class="border-2 border-white/50 hover:bg-white hover:text-cbaDark px-10 py-4 rounded-full font-bold text-lg transition-all flex items-center justify-center">
+                    Explore Events
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Our Purpose & Aims -->
+    <section id="purpose" class="py-24 bg-white px-6">
+        <div class="container mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="font-heading text-4xl md:text-5xl font-bold mb-4">Our Purpose & Aims</h2>
+                <div class="w-20 h-1 bg-cbaRed mx-auto mb-6"></div>
+                <p class="text-xl text-gray-500 max-w-2xl mx-auto">Championing, promoting, and advocating for small
+                    multicultural businesses.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-10 rounded-2xl border border-gray-100 card-hover text-center group">
+                    <div
+                        class="w-20 h-20 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform">
+                        <svg class="w-10 h-10 text-cbaRed" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold mb-4">Stand Behind Our Members</h3>
+                    <p class="text-gray-600 leading-relaxed">Giving our community a collective voice. We help members
+                        grow professionally through networking, skills development, mentoring, and access to programs.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-10 rounded-2xl border border-gray-100 card-hover text-center group">
+                    <div
+                        class="w-20 h-20 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform">
+                        <svg class="w-10 h-10 text-cbaRed" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold mb-4">Special Entertainment Precinct</h3>
+                    <p class="text-gray-600 leading-relaxed">Actively advocating for an expanded night-time and
+                        entertainment economy that reflects the energy, culture, and life of our vibrant community.</p>
+                </div>
+
+                <div class="bg-gray-50 p-10 rounded-2xl border border-gray-100 card-hover text-center group">
+                    <div
+                        class="w-20 h-20 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform">
+                        <svg class="w-10 h-10 text-cbaRed" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-heading text-2xl font-bold mb-4">A Must-Visit Destination</h3>
+                    <p class="text-gray-600 leading-relaxed">Running campaigns that put Cabramatta on the map. We back
+                        strategic projects that advance cultural expression, economic resilience, and social inclusion.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Cultural Advisory Council -->
+    <section class="py-24 bg-cbaDark text-white px-6 relative overflow-hidden">
+        <div
+            class="absolute top-0 right-0 w-1/2 h-full bg-cbaRed/10 blur-3xl rounded-full transform translate-x-1/2 -translate-y-1/2 pointer-events-none">
+        </div>
+        <div class="container mx-auto flex flex-col md:flex-row items-center gap-16 relative z-10">
+            <div class="md:w-1/2">
+                <h2 class="font-heading text-4xl md:text-5xl font-bold mb-6 text-cbaRed">The Cultural Advisory Council
+                </h2>
+                <p class="text-xl text-gray-300 mb-8 font-light italic">"Wisdom comes in many forms."</p>
+                <p class="text-gray-400 mb-8 leading-relaxed">We have established a Cultural Advisory Council (CAC) — a
+                    group of respected community voices guiding the cultural dimensions of our work. The table reflects
+                    the full richness of our community: elders, cultural practitioners, religious leaders, artists, and
+                    advocates.</p>
+
+                <ul class="space-y-4 mb-8 text-gray-300">
+                    <li class="flex items-start gap-3">
+                        <div class="mt-1 bg-cbaRed/20 p-1 rounded-full text-cbaRed"><svg class="w-4 h-4" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg></div>
+                        <span>Bringing deep cultural knowledge and lived experience.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <div class="mt-1 bg-cbaRed/20 p-1 rounded-full text-cbaRed"><svg class="w-4 h-4" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg></div>
+                        <span>Ensuring decisions are genuinely connected to the community.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <div class="mt-1 bg-cbaRed/20 p-1 rounded-full text-cbaRed"><svg class="w-4 h-4" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg></div>
+                        <span>Outspoken champions of diversity and inclusion.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="md:w-1/2 relative group">
+                <img src="images/council.png" alt="Cultural Council"
+                    class="rounded-2xl shadow-2xl relative z-10 border border-gray-800 transition-transform duration-500 group-hover:-translate-y-2 group-hover:-translate-x-2">
+                <div
+                    class="absolute -bottom-6 -left-6 w-full h-full border-2 border-cbaRed rounded-2xl z-0 transition-transform duration-500 group-hover:translate-y-2 group-hover:translate-x-2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Membership Tiers -->
+    <section id="membership" class="py-24 bg-gray-50 px-6">
+        <div class="container mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="font-heading text-4xl md:text-5xl font-bold mb-4">Join the Association</h2>
+                <div class="w-20 h-1 bg-cbaRed mx-auto mb-6"></div>
+                <p class="text-xl text-gray-500 max-w-2xl mx-auto">We offer three types of membership, because we know
+                    our community is made up of many different people with different roles.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center max-w-6xl mx-auto">
+                <!-- Tier 1 -->
+                <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-lg text-center card-hover">
+                    <h3 class="font-heading text-2xl font-bold text-gray-800 mb-2">Associate Member</h3>
+                    <p class="text-gray-500 text-sm mb-6">For residents & supporters</p>
+                    <div class="text-4xl font-extrabold text-gray-900 mb-8">Free</div>
+                    <ul class="text-left space-y-4 mb-8 text-gray-600 font-medium">
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-green-500" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Open to residents</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-green-500" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Attend meetings</li>
+                        <li class="flex items-center gap-3 text-gray-400 line-through"><svg
+                                class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"></path>
+                            </svg> No voting rights</li>
+                    </ul>
+                    <a href="membership-preview.html#application-form"
+                        class="block w-full py-4 border-2 border-cbaRed text-cbaRed rounded-xl font-bold hover:bg-cbaRed hover:text-white transition-colors">Apply
+                        Now</a>
+                </div>
+
+                <!-- Tier 2 (Highlighted) -->
+                <div
+                    class="bg-cbaRed rounded-3xl p-10 shadow-2xl text-center transform md:-translate-y-4 relative overflow-hidden border border-red-600">
+                    <div
+                        class="absolute top-0 right-0 bg-yellow-400 text-yellow-900 text-xs font-bold px-4 py-1.5 rounded-bl-xl shadow-sm">
+                        RECOMMENDED</div>
+                    <h3 class="font-heading text-3xl font-bold text-white mb-2">Full Member</h3>
+                    <p class="text-red-200 text-sm mb-6">For businesses in Cabramatta</p>
+                    <div
+                        class="text-2xl font-extrabold text-white mb-8 tracking-wide bg-black/20 py-2 rounded-lg border border-white/10">
+                        VOTING RIGHTS</div>
+                    <ul class="text-left space-y-4 mb-8 text-white/95 font-medium">
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-white" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> <strong>Full voting rights at AGM</strong></li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-white" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Eligible for committee</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-white" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Marketing & promo support</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-white" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Business training access</li>
+                    </ul>
+                    <a href="membership-preview.html#application-form"
+                        class="block w-full py-4 bg-white text-cbaRed rounded-xl font-bold hover:bg-gray-100 transition-colors shadow-lg">Apply
+                        as Business</a>
+                </div>
+
+                <!-- Tier 3 -->
+                <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-lg text-center card-hover">
+                    <h3 class="font-heading text-2xl font-bold text-gray-800 mb-2">Affiliate Member</h3>
+                    <p class="text-gray-500 text-sm mb-6">For organisations & Gov</p>
+                    <div
+                        class="text-2xl font-extrabold text-gray-900 mb-8 bg-gray-50 py-2 rounded-lg border border-gray-100">
+                        Partnerships</div>
+                    <ul class="text-left space-y-4 mb-8 text-gray-600 font-medium">
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-cbaRed" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Educational institutions</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-cbaRed" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Government bodies</li>
+                        <li class="flex items-center gap-3"><svg class="w-5 h-5 text-cbaRed" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg> Advance shared purposes</li>
+                    </ul>
+                    <a href="membership-preview.html#application-form"
+                        class="block w-full py-4 border-2 border-gray-800 text-gray-800 rounded-xl font-bold hover:bg-gray-800 hover:text-white transition-colors">Partner
+                        With Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Community Events -->
+    <section id="events" class="py-24 bg-white px-6 border-t border-gray-100">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-4xl md:text-5xl font-bold mb-4">Community Events</h2>
+                <div class="w-20 h-1 bg-cbaRed mx-auto mb-6"></div>
+                <p class="text-xl text-gray-500">Building campaigns that strengthen the business and cultural life of
+                    Cabramatta.</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="flex justify-center gap-8 mb-12 border-b border-gray-200">
+                <button onclick="switchTab('upcoming')" id="tab-upcoming"
+                    class="pb-4 border-b-2 border-cbaRed text-cbaRed font-bold text-lg tab-button transition-colors">Upcoming
+                    Events</button>
+                <button onclick="switchTab('ongoing')" id="tab-ongoing"
+                    class="pb-4 border-b-2 border-transparent text-gray-400 font-bold text-lg hover:text-gray-600 tab-button transition-colors">Ongoing
+                    Initiatives</button>
+                <button onclick="switchTab('past')" id="tab-past"
+                    class="pb-4 border-b-2 border-transparent text-gray-400 font-bold text-lg hover:text-gray-600 tab-button transition-colors">Past
+                    Highlights</button>
+            </div>
+
+            <!-- Tab Content 1: Upcoming -->
+            <div id="content-upcoming" class="tab-content active">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Event Card 1 -->
+                    <div
+                        class="bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 card-hover group flex flex-col">
+                        <div
+                            class="h-56 bg-gray-300 bg-[url('images/lunar_new_year.png')] bg-cover bg-center group-hover:scale-105 transition-transform duration-500 relative">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                            </div>
+                        </div>
+                        <div class="p-8 relative bg-white flex-1 flex flex-col z-10">
+                            <div
+                                class="absolute -top-6 left-8 bg-cbaRed text-white px-5 py-2.5 rounded-xl font-bold shadow-lg text-sm tracking-wider">
+                                15 JUN</div>
+                            <h3
+                                class="font-heading text-2xl font-bold mb-3 mt-4 group-hover:text-cbaRed transition-colors">
+                                Lunar New Year Planning Session</h3>
+                            <p class="text-gray-600 mb-6 line-clamp-3 flex-1">Join local traders to discuss
+                                preparations, street decorations, and marketing for the upcoming major festival season.
+                            </p>
+                            <a href="#"
+                                class="text-cbaRed font-bold flex items-center gap-2 mt-auto hover:gap-3 transition-all">Read
+                                more <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <!-- Event Card 2 -->
+                    <div
+                        class="bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 card-hover group flex flex-col">
+                        <div
+                            class="h-56 bg-gray-300 bg-[url('images/workshop.png')] bg-cover bg-center group-hover:scale-105 transition-transform duration-500 relative">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                            </div>
+                        </div>
+                        <div class="p-8 relative bg-white flex-1 flex flex-col z-10">
+                            <div
+                                class="absolute -top-6 left-8 bg-cbaRed text-white px-5 py-2.5 rounded-xl font-bold shadow-lg text-sm tracking-wider">
+                                22 JUN</div>
+                            <h3
+                                class="font-heading text-2xl font-bold mb-3 mt-4 group-hover:text-cbaRed transition-colors">
+                                Digital Skills Workshop</h3>
+                            <p class="text-gray-600 mb-6 line-clamp-3 flex-1">A free workshop helping small business
+                                owners improve their social media presence and online e-commerce strategies.</p>
+                            <a href="#"
+                                class="text-cbaRed font-bold flex items-center gap-2 mt-auto hover:gap-3 transition-all">Read
+                                more <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg></a>
+                        </div>
+                    </div>
+                    <!-- Event Card 3 -->
+                    <div
+                        class="bg-white rounded-2xl overflow-hidden shadow-xl border border-gray-100 card-hover group flex flex-col">
+                        <div
+                            class="h-56 bg-gray-300 bg-[url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80')] bg-cover bg-center group-hover:scale-105 transition-transform duration-500 relative">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                            </div>
+                        </div>
+                        <div class="p-8 relative bg-white flex-1 flex flex-col z-10">
+                            <div
+                                class="absolute -top-6 left-8 bg-cbaRed text-white px-5 py-2.5 rounded-xl font-bold shadow-lg text-sm tracking-wider">
+                                05 JUL</div>
+                            <h3
+                                class="font-heading text-2xl font-bold mb-3 mt-4 group-hover:text-cbaRed transition-colors">
+                                Annual General Meeting</h3>
+                            <p class="text-gray-600 mb-6 line-clamp-3 flex-1">Our yearly gathering where members come
+                                together to review progress, receive financial reports, and elect the committee.</p>
+                            <a href="#"
+                                class="text-cbaRed font-bold flex items-center gap-2 mt-auto hover:gap-3 transition-all">Read
+                                more <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content 2: Ongoing -->
+            <div id="content-ongoing"
+                class="tab-content text-center py-16 bg-gray-50 rounded-2xl border border-gray-100">
+                <div class="w-20 h-20 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <svg class="w-10 h-10 text-cbaRed" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                        </path>
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Special Entertainment Precinct Advocacy</h3>
+                <p class="text-gray-600 max-w-2xl mx-auto">We are currently in talks with Fairfield City Council to
+                    secure the expansion of Cabramatta's night-time economy status, allowing for extended trading hours
+                    and cultural performances.</p>
+            </div>
+
+            <!-- Tab Content 3: Past -->
+            <div id="content-past" class="tab-content">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <img src="images/lunar_new_year.png"
+                        class="w-full h-48 object-cover rounded-xl shadow-md hover:shadow-xl transition-shadow cursor-pointer">
+                    <img src="images/workshop.png"
+                        class="w-full h-48 object-cover rounded-xl shadow-md hover:shadow-xl transition-shadow cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1542640244-7e672d6cb466?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                        class="w-full h-48 object-cover rounded-xl shadow-md hover:shadow-xl transition-shadow cursor-pointer">
+                    <img src="images/hero_cabramatta.png"
+                        class="w-full h-48 object-cover rounded-xl shadow-md hover:shadow-xl transition-shadow cursor-pointer">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5.5 Latest News & Announcements -->
+    <section class="py-24 bg-gray-50 px-6 border-t border-gray-200">
+        <div class="container mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold mb-4">Latest News & Updates</h2>
+                    <div class="w-16 h-1 bg-cbaRed"></div>
+                </div>
+                <a href="#"
+                    class="hidden md:flex items-center gap-2 font-bold text-gray-500 hover:text-cbaRed transition-colors">View
+                    All News <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg></a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- News Item 1 -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover flex flex-col sm:flex-row gap-6 items-center">
+                    <div
+                        class="w-full sm:w-32 h-32 bg-gray-100 rounded-xl flex-shrink-0 flex items-center justify-center text-gray-400">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-sm text-cbaRed font-bold mb-2">08 MAY 2026</div>
+                        <h3
+                            class="font-heading text-xl font-bold mb-3 hover:text-cbaRed transition-colors cursor-pointer">
+                            Official Meeting Minutes Released</h3>
+                        <p class="text-gray-600 text-sm mb-4">Resolutions regarding the Cultural Advisory Council and
+                            membership tier structure from our latest committee meeting.</p>
+                        <a href="#"
+                            class="text-sm font-bold border-b border-gray-800 pb-1 hover:text-cbaRed hover:border-cbaRed transition-colors">Read
+                            Document</a>
+                    </div>
+                </div>
+
+                <!-- News Item 2 -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover flex flex-col sm:flex-row gap-6 items-center">
+                    <div
+                        class="w-full sm:w-32 h-32 bg-gray-100 rounded-xl flex-shrink-0 flex items-center justify-center text-gray-400">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-sm text-cbaRed font-bold mb-2">01 MAY 2026</div>
+                        <h3
+                            class="font-heading text-xl font-bold mb-3 hover:text-cbaRed transition-colors cursor-pointer">
+                            Call for Cultural Advisors</h3>
+                        <p class="text-gray-600 text-sm mb-4">We are looking for respected community voices, elders, and
+                            artists to join our newly formed Cultural Advisory Council.</p>
+                        <a href="#"
+                            class="text-sm font-bold border-b border-gray-800 pb-1 hover:text-cbaRed hover:border-cbaRed transition-colors">Learn
+                            More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 text-center md:hidden">
+                <a href="#"
+                    class="inline-flex items-center gap-2 font-bold text-gray-800 hover:text-cbaRed transition-colors">View
+                    All News <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Committee Section -->
+    <section class="py-24 bg-white px-6 border-t border-gray-200">
+        <div class="container mx-auto text-center">
+            <h2 class="font-heading text-4xl md:text-5xl font-bold mb-4">The Management Committee</h2>
+            <div class="w-20 h-1 bg-cbaRed mx-auto mb-6"></div>
+            <p class="text-xl text-gray-500 mb-16">Elected by members to lead the Association with honesty, integrity,
+                and genuine respect.</p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center group">
+                    <div
+                        class="w-48 h-48 mx-auto rounded-full bg-gray-200 mb-6 overflow-hidden shadow-xl border-4 border-white group-hover:border-cbaRed transition-colors relative">
+                        <img src="images/avatar_khang.png"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl mb-1">Danny HUYNH</h3>
+                    <p class="text-cbaRed font-bold tracking-wide text-sm">CHAIRPERSON</p>
+                </div>
+                <div class="text-center group">
+                    <div
+                        class="w-48 h-48 mx-auto rounded-full bg-gray-200 mb-6 overflow-hidden shadow-xl border-4 border-white group-hover:border-cbaRed transition-colors">
+                        <img src="images/avatar_vuong.png"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl mb-1">Kevin Minh NGUYEN</h3>
+                    <p class="text-cbaRed font-bold tracking-wide text-sm">DEPUTY CHAIR & PUBLIC OFFICER</p>
+                </div>
+                <div class="text-center group">
+                    <div
+                        class="w-48 h-48 mx-auto rounded-full bg-gray-200 mb-6 overflow-hidden shadow-xl border-4 border-white group-hover:border-cbaRed transition-colors">
+                        <img src="images/avatar_van.png"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl mb-1">Andrew Thanh TRAN</h3>
+                    <p class="text-cbaRed font-bold tracking-wide text-sm">SECRETARY</p>
+                </div>
+                <div class="text-center group">
+                    <div
+                        class="w-48 h-48 mx-auto rounded-full bg-gray-200 mb-6 overflow-hidden shadow-xl border-4 border-white group-hover:border-cbaRed transition-colors">
+                        <img src="images/avatar_tien.png"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <h3 class="font-heading font-bold text-2xl mb-1">Lisa Mai VO</h3>
+                    <p class="text-cbaRed font-bold tracking-wide text-sm">TREASURER</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Governance -->
+    <section class="py-24 bg-white px-6">
+        <div class="container mx-auto flex flex-col md:flex-row gap-16">
+            <div class="md:w-5/12">
+                <h2 class="font-heading text-4xl font-bold mb-6">Governance & Transparency</h2>
+                <div class="w-16 h-1 bg-cbaRed mb-6"></div>
+                <p class="text-lg text-gray-600 mb-6 leading-relaxed">We are a registered Not-for-Profit incorporated
+                    under the Associations Incorporation Act 2009 (NSW). Every dollar we earn is used to advance our
+                    purposes.</p>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">We maintain clear records and make our financial
+                    statements and Constitution available to our members.</p>
+                <a href="#"
+                    class="inline-flex items-center gap-2 px-8 py-4 border-2 border-gray-800 rounded-xl font-bold hover:bg-gray-800 hover:text-white transition-colors shadow-sm">
+                    Download Constitution (PDF)
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="md:w-7/12">
+                <!-- Interactive Accordion -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm">
+
+                    <!-- Accordion Item 1 -->
+                    <div class="border-b border-gray-200">
+                        <button
+                            class="w-full px-8 py-5 flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition-colors"
+                            onclick="toggleAccordion('acc1')">
+                            <h4 class="font-bold text-lg text-gray-800">How are decisions made?</h4>
+                            <svg id="icon-acc1" class="w-5 h-5 text-cbaRed accordion-icon" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="content-acc1" class="accordion-content bg-white">
+                            <p class="px-8 py-6 text-gray-600 leading-relaxed">The committee makes day-to-day decisions.
+                                Significant changes to our rules require a special resolution (75% agreement) by members
+                                at a general meeting with 14 days' notice.</p>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 2 -->
+                    <div class="border-b border-gray-200">
+                        <button
+                            class="w-full px-8 py-5 flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition-colors"
+                            onclick="toggleAccordion('acc2')">
+                            <h4 class="font-bold text-lg text-gray-800">How are funds managed?</h4>
+                            <svg id="icon-acc2" class="w-5 h-5 text-cbaRed accordion-icon" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="content-acc2" class="accordion-content bg-white">
+                            <p class="px-8 py-6 text-gray-600 leading-relaxed">We can raise money through fees,
+                                donations, grants, and cultural partnerships. The Treasurer oversees day-to-day
+                                finances, and if annual revenue exceeds $500,000, we undertake independent audits.</p>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item 3 -->
+                    <div>
+                        <button
+                            class="w-full px-8 py-5 flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition-colors"
+                            onclick="toggleAccordion('acc3')">
+                            <h4 class="font-bold text-lg text-gray-800">What is the Code of Conduct?</h4>
+                            <svg id="icon-acc3" class="w-5 h-5 text-cbaRed accordion-icon" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div id="content-acc3" class="accordion-content bg-white">
+                            <p class="px-8 py-6 text-gray-600 leading-relaxed">Everyone is expected to act with honesty,
+                                integrity, and respect for the cultures that make our community who we are. Conflicts of
+                                interest must be disclosed. We do not tolerate actions that bring the association into
+                                disrepute.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7.5 Our Partners & Sponsors -->
+    <section class="py-16 bg-white px-6 border-t border-gray-100">
+        <div class="container mx-auto text-center">
+            <h3 class="font-heading text-xl font-bold mb-8 text-gray-400 uppercase tracking-widest">Our Partners &
+                Sponsors</h3>
+            <div
+                class="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <div class="text-2xl font-black font-heading tracking-tighter text-gray-800">FAIRFIELD CITY</div>
+                <div class="text-2xl font-black font-heading tracking-tighter text-gray-800">LOCAL CHAMBER</div>
+                <div class="text-2xl font-black font-heading tracking-tighter text-gray-800">CULTURAL FUND</div>
+                <div class="text-2xl font-black font-heading tracking-tighter text-gray-800">BUSINESS NSW</div>
+                <div class="text-2xl font-black font-heading tracking-tighter text-gray-800">SBS RADIO</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer CTA -->
+    <section class="py-24 bg-cbaDark text-white px-6 relative overflow-hidden">
+        <div
+            class="absolute inset-0 bg-[url('images/hero.png')] bg-cover bg-center opacity-10 mix-blend-overlay pointer-events-none">
+        </div>
+        <div class="container mx-auto flex flex-col md:flex-row gap-16 items-center relative z-10">
+            <div class="md:w-1/2">
+                <h2 class="font-heading text-4xl md:text-5xl font-bold mb-8">Contact the Association</h2>
+                <p class="text-xl text-gray-300 mb-10 leading-relaxed font-light">Whether you're a local business
+                    wanting to join, or a partner seeking collaboration, we'd love to hear from you.</p>
+                <div class="space-y-6 text-lg">
+                    <div class="flex items-start gap-4 p-4 rounded-xl glass-panel">
+                        <div class="bg-cbaRed/20 p-3 rounded-full text-cbaRed"><svg class="w-6 h-6" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z">
+                                </path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg></div>
+                        <div class="pt-1">
+                            <span class="block text-sm text-gray-400 mb-1 font-bold tracking-wider">OFFICIAL
+                                ADDRESS</span>
+                            <span>23/8 Dutton Lane,<br>Cabramatta, NSW 2166</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 p-4 rounded-xl glass-panel">
+                        <div class="bg-cbaRed/20 p-3 rounded-full text-cbaRed"><svg class="w-6 h-6" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg></div>
+                        <div class="pt-1">
+                            <span class="block text-sm text-gray-400 mb-1 font-bold tracking-wider">EMAIL US</span>
+                            <span>admin@cba.org.au</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 w-full">
+                <div class="bg-white text-gray-800 p-10 rounded-3xl shadow-2xl relative">
+                    <div class="absolute -top-3 -right-3 w-20 h-20 bg-cbaRed rounded-full blur-xl opacity-20"></div>
+                    <h3 class="font-heading text-3xl font-bold mb-8">Send a Message</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <input type="text" placeholder="Your Name"
+                                class="w-full border border-gray-200 px-5 py-4 focus:outline-none focus:border-cbaRed focus:ring-1 focus:ring-cbaRed transition-all bg-gray-50 rounded-xl font-medium">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your Email"
+                                class="w-full border border-gray-200 px-5 py-4 focus:outline-none focus:border-cbaRed focus:ring-1 focus:ring-cbaRed transition-all bg-gray-50 rounded-xl font-medium">
+                        </div>
+                        <div>
+                            <textarea rows="4" placeholder="How can we help you?"
+                                class="w-full border border-gray-200 px-5 py-4 focus:outline-none focus:border-cbaRed focus:ring-1 focus:ring-cbaRed transition-all bg-gray-50 rounded-xl font-medium resize-none"></textarea>
+                        </div>
+                        <button type="button"
+                            class="btn-primary w-full py-4 rounded-xl font-bold text-lg mt-2 shadow-lg hover:shadow-xl flex items-center justify-center gap-2">
+                            Send Message
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-gray-500 py-8 text-center text-sm border-t border-gray-800">
+        <p>&copy; 2026 Cabramatta Business Association. All rights reserved.</p>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Accordion functionality
+        function toggleAccordion(id) {
+            const content = document.getElementById('content-' + id);
+            const icon = document.getElementById('icon-' + id);
+
+            if (content.classList.contains('open')) {
+                content.classList.remove('open');
+                icon.classList.remove('open');
+            } else {
+                // Close all others first
+                document.querySelectorAll('.accordion-content').forEach(el => el.classList.remove('open'));
+                document.querySelectorAll('.accordion-icon').forEach(el => el.classList.remove('open'));
+
+                content.classList.add('open');
+                icon.classList.add('open');
+            }
+        }
+
+        // Open first accordion by default
+        setTimeout(() => {
+            toggleAccordion('acc1');
+        }, 500);
+
+        // Tab functionality
+        function switchTab(tabId) {
+            // Hide all contents
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            // Reset all buttons
+            document.querySelectorAll('.tab-button').forEach(el => {
+                el.classList.remove('border-cbaRed', 'text-cbaRed');
+                el.classList.add('border-transparent', 'text-gray-400');
+            });
+
+            // Show selected content
+            document.getElementById('content-' + tabId).classList.add('active');
+
+            // Highlight selected button
+            const btn = document.getElementById('tab-' + tabId);
+            btn.classList.remove('border-transparent', 'text-gray-400');
+            btn.classList.add('border-cbaRed', 'text-cbaRed');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!-- Flatsome UX Builder Membership Page Shortcode -->
+<!-- PLEASE COPY EVERYTHING BELOW AND PASTE INTO THE WORDPRESS TEXT EDITOR, THEN SWITCH TO UX BUILDER -->
+
+<!-- Inner Hero -->
+[section bg_color="rgb(200, 16, 46)" bg_overlay="rgba(15, 15, 35, 0.8)" padding="120px 0px" dark="true" bg="https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" bg_size="large" bg_pos="center" bg_overlay_color="rgba(200, 16, 46, 0.3)"]
+[row]
+[col span="8" span__sm="12" span__md="10" align="center" margin="0px auto" animate="fadeInUp"]
+[ux_text font_size="1.2rem" text_color="rgb(255, 255, 255)"]
+<div style="display: inline-block; padding: 5px 15px; border: 1px solid rgba(255,255,255,0.3); border-radius: 50px; text-transform: uppercase; letter-spacing: 2px; font-weight: bold; margin-bottom: 20px;">Join the Network</div>
+[/ux_text]
+[ux_text font_size="3.5rem" font_size__sm="2.5rem" line_height="1.1"]
+<h1 style="font-weight: 800; margin-bottom: 20px;">Become a Member</h1>
+[/ux_text]
+[ux_text font_size="1.2rem" line_height="1.6"]
+<p>Join a powerful collective of businesses, residents, and cultural leaders dedicated to the economic and cultural prosperity of Cabramatta.</p>
+[/ux_text]
+[/col]
+[/row]
+[/section]
+
+<!-- Membership Tiers -->
+[section padding="100px 0px" bg_color="rgb(255, 255, 255)" class="membership-tiers-section"]
+[row style="collapse" v_align="equal"]
+[col span="4" span__sm="12"]
+[ux_price_table title="Associate Member" price="Free / Small Fee" description="For residents & supporters" bg_color="rgb(249, 249, 249)" depth="1" depth_hover="3" class="membership-card"]
+[bullet_item text="Open to residents & community"]
+[bullet_item text="Attend meetings & events"]
+[bullet_item text="No voting rights"]
+[button text="Apply Now" style="outline" color="primary" size="large" expand="true" link="#application-form"]
+[/ux_price_table]
+[/col]
+[col span="4" span__sm="12"]
+[ux_price_table title="Full Member" price="VOTING RIGHTS" description="For businesses in Cabramatta" bg_color="rgb(200, 16, 46)" color="light" featured="true" depth="3" depth_hover="5" class="membership-card"]
+[bullet_item text="Full voting rights at General Meetings"]
+[bullet_item text="Eligible for committee election"]
+[bullet_item text="Marketing & promotional support"]
+[bullet_item text="Business networking & training"]
+[button text="Apply as Business" color="white" style="outline" size="large" expand="true" link="#application-form"]
+[/ux_price_table]
+[/col]
+[col span="4" span__sm="12"]
+[ux_price_table title="Affiliate Member" price="Partnerships" description="For organisations & Gov bodies" bg_color="rgb(249, 249, 249)" depth="1" depth_hover="3" class="membership-card"]
+[bullet_item text="Educational institutions"]
+[bullet_item text="Government bodies"]
+[bullet_item text="Advance shared purposes"]
+[button text="Partner With Us" style="outline" color="primary" size="large" expand="true" link="#application-form"]
+[/ux_price_table]
+[/col]
+[/row]
+[/section]
+
+<!-- Eligibility Criteria -->
+[section padding="80px 0px" bg_color="rgb(249, 249, 249)"]
+[row]
+[col span="8" span__sm="12" align="center" margin="0px auto"]
+[title text="Eligibility Criteria" style="center" size="xxlarge"]
+[ux_text font_size="1.1rem"]
+<p>As per <strong>Clause 8.4</strong> of our Constitution, membership is open to individuals and entities that align with our purposes.</p>
+[/ux_text]
+[/col]
+[/row]
+[row]
+[col span="8" span__sm="12" margin="0px auto" padding="40px 40px 40px 40px" bg_color="rgb(255, 255, 255)" bg_radius="10" depth="1"]
+[row_inner v_align="middle"]
+[col_inner span="2" span__sm="12" align="center"]
+[ux_text font_size="2rem" text_color="rgb(200, 16, 46)"]
+<strong>1</strong>
+[/ux_text]
+[/col_inner]
+[col_inner span="10" span__sm="12"]
+[ux_text]
+<h4 style="margin-bottom: 5px;">Full Membership</h4>
+<p style="font-size: 0.9rem;">Must be an incorporated body, a registered company, or a sole trader actively conducting business within Cabramatta. Full members have the right to vote and hold executive office.</p>
+[/ux_text]
+[/col_inner]
+[/row_inner]
+[divider width="100%" height="1px" margin="20px"]
+[row_inner v_align="middle"]
+[col_inner span="2" span__sm="12" align="center"]
+[ux_text font_size="2rem" text_color="rgb(200, 16, 46)"]
+<strong>2</strong>
+[/ux_text]
+[/col_inner]
+[col_inner span="10" span__sm="12"]
+[ux_text]
+<h4 style="margin-bottom: 5px;">Associate Membership</h4>
+<p style="font-size: 0.9rem;">Open to individuals, residents, and members of the general public who support the purposes of the Association. Associate members cannot vote but can attend general meetings.</p>
+[/ux_text]
+[/col_inner]
+[/row_inner]
+[divider width="100%" height="1px" margin="20px"]
+[row_inner v_align="middle"]
+[col_inner span="2" span__sm="12" align="center"]
+[ux_text font_size="2rem" text_color="rgb(200, 16, 46)"]
+<strong>3</strong>
+[/ux_text]
+[/col_inner]
+[col_inner span="10" span__sm="12"]
+[ux_text]
+<h4 style="margin-bottom: 5px;">Affiliate Membership</h4>
+<p style="font-size: 0.9rem;">Open to other organisations, educational institutions, or government bodies who wish to partner with us. Cannot vote, but formalises a strategic relationship.</p>
+[/ux_text]
+[/col_inner]
+[/row_inner]
+[/col]
+[/row]
+[/section]
+
+<!-- Application Form -->
+[section padding="100px 0px" bg_color="rgb(255, 255, 255)" id="application-form"]
+[row]
+[col span="8" span__sm="12" align="center" margin="0px auto"]
+[title text="Membership Application Form" style="center" size="xxlarge"]
+[ux_text font_size="1.1rem"]
+<p>Please fill out the form below. Our committee will review your application at the next scheduled meeting.</p>
+[/ux_text]
+[/col]
+[/row]
+[row]
+[col span="8" span__sm="12" margin="0px auto" padding="40px 40px 40px 40px" bg_color="rgb(255, 255, 255)" bg_radius="10" depth="2"]
+<!-- Assuming Contact Form 7 is used. Replace ID with your actual CF7 ID -->
+[contact-form-7 id="124" title="Membership Application"]
+[/col]
+[/row]
+[/section]
+
